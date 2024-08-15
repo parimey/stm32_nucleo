@@ -101,6 +101,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET); // LED_ON //LED is on Pin PB0
+	     HAL_Delay(1000);//delay_in_ms
+	     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);//LED_OFF
+	     HAL_Delay(1000);//delay_in_ms
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
